@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "product_name": "wijn",
+        "buy_date": "2021-05-14",
+        "buy_price": "3.60",
+        "expiration_date": "2021-10-19"
+    },
+    {
+        "id": "2",
+        "product_name": "bitterballen",
+        "buy_date": "2021-05-14",
+        "buy_price": "0.55",
+        "expiration_date": "2022-06-21"
+    },
+    {
+        "id": "3",
+        "product_name": "bier",
+        "buy_date": "2021-05-14",
+        "buy_price": "0.90",
+        "expiration_date": "2022-02-01"
+    },
+    {
+        "id": "4",
+        "product_name": "kaas",
+        "buy_date": "2021-05-14",
+        "buy_price": "4.20",
+        "expiration_date": "2022-04-05"
+    },
+    {
+        "id": "5",
+        "product_name": "bitterballen",
+        "buy_date": "2021-05-14",
+        "buy_price": "0.60",
+        "expiration_date": "2022-08-06"
+    },
+    {
+        "id": "6",
+        "product_name": "champagne",
+        "buy_date": "2021-05-14",
+        "buy_price": "0.60",
+        "expiration_date": "2022-08-06"
+    },
+    {
+        "id": "7",
+        "product_name": "cola",
+        "buy_date": "2021-05-15",
+        "buy_price": "0.60",
+        "expiration_date": "2022-08-06"
+    },
+    {
+        "id": "8",
+        "product_name": "redbull",
+        "buy_date": "2020-02-02",
+        "buy_price": "0.60",
+        "expiration_date": "2022-08-06"
+    }
+]
