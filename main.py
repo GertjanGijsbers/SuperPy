@@ -1,6 +1,6 @@
 # local modules
 from my_parser import create_parser
-from my_date import get_date, get_advance_date
+from my_date import create_date_txt, get_date, get_advance_date
 from test_main import check_parameters_buy, check_parameters_sell
 from function_buy import buy
 from function_sell import sell
@@ -16,6 +16,9 @@ __winc_id__ = 'a2bc36ea784242e4989deb157d527ba0'
 __human_name__ = 'superpy'
 
 if __name__ == '__main__':
+    # create date file
+    create_date_txt()
+    
     # use the parser function for the command line
     parser = create_parser()
     args = parser.parse_args()
@@ -85,8 +88,8 @@ if __name__ == '__main__':
             export_inventory_csv()
             # export json
             folder = os.getcwd()
-            csv_file_path = folder + f"\\csv-files\\bought.csv"
+            csv_file_path = os.path.join(folder, 'csv-files', 'bought.csv')
             date_file = datetime.now()
             date_file = date_file.strftime('%Y-%m-%d-(%H%M%S)')
-            json_file_path = folder + f"\\exports\\inventory-{date_file}.json"
+            json_file_path = os.path.join(folder, 'exports', f'inventory-{date_file}.json')
             export_inventory_json(csv_file_path, json_file_path, date_file)
