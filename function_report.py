@@ -8,7 +8,7 @@ from rich import print
 def read_file(file_name):
     # get location file
     folder = os.getcwd()
-    file = folder + f"\\csv-files\\{file_name}.csv"
+    file = os.path.join(folder, 'csv-files', f'{file_name}.csv')
     # read the file
     f = open(file, "r")
     for x in f:
@@ -20,7 +20,7 @@ def read_file(file_name):
 # convert a CSV file to a list 
 def convert_csv_to_list(file_name):
     folder = os.getcwd()
-    file = folder + f"\\csv-files\\{file_name}.csv"
+    file = os.path.join(folder, 'csv-files', f'{file_name}.csv')
     with open(file, newline='') as f:
         next(f)
         reader = csv.reader(f)
