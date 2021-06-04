@@ -6,8 +6,8 @@ from rich import print
 def sell(product_name, sell_date, sell_price):
     # get location file
     folder = os.getcwd()
-    file_bought = folder + f"\\csv-files\\bought.csv"
-    file_sold = folder + f"\\csv-files\\sold.csv"
+    file_bought = os.path.join(folder, 'csv-files', 'bought.csv')
+    file_sold = os.path.join(folder, 'csv-files', 'sold.csv')
     # read file and get the bought_id matching the product_name
     check_loop = "No match found"
     with open(file_bought) as f:
