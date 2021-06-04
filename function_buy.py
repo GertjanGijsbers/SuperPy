@@ -15,4 +15,4 @@ def buy(product_name, buy_date, buy_price, expiration_date):
     with open(file, 'a', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(row)
-        print(f"[bold green]:thumbsup: Product {product_name} added to bought.csv")
+        print(f"[bold green]:thumbsup: Product {product_name} added to bought.csv[/bold green]")
