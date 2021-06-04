@@ -18,7 +18,7 @@ def export_inventory_csv():
     date_file = date_file.strftime('%Y-%m-%d-(%H%M%S)')
     # get folder to export
     folder = os.getcwd()
-    file = folder + f"\\exports\\inventory-{date_file}.csv"
+    file = os.path.join(folder, 'exports', f'inventory-{date_file}.csv')
     # export file
     csv_file.to_csv(file)
     # message export succeeded
