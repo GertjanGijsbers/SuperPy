@@ -5,7 +5,7 @@ from rich import print
 def buy(product_name, buy_date, buy_price, expiration_date):
     # get location file
     folder = os.getcwd()
-    file = folder + f"\\csv-files\\bought.csv"
+    file = os.path.join(folder, 'csv-files', 'bought.csv') 
     # read file and get number of lines for the id
     f = open(file)
     reader = csv.reader(f)
